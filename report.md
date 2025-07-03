@@ -1,0 +1,2 @@
+- The document titled "The Rise of Agentic AI: When Machines Start to Take Initiative" discusses how Agentic AI systems autonomously set goals and take actions, redefining human interaction with technology across industries including business and science.
+- It highlights the capabilities and potential risks of Agentic AI, emphasizing the integration of large language models and frameworks to enable these systems while ensuring alignment with human values for safer applications.

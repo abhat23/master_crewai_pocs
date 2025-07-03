@@ -1,0 +1,39 @@
+---
+validate_internal_system_task:
+  description: Check transactions against the internal banking system for any red
+    flags or compliance issues.
+  expected_output: A report detailing any compliance issues found in the internal
+    banking system.
+  async_execution: false
+  agent: internal_system_validator
+check_sanctions_watchlist_task:
+  description: Cross-reference transactions with the latest sanction lists and watchlists
+    to ensure compliance.
+  expected_output: A report confirming whether transactions are compliant with sanction
+    lists and watchlists.
+  async_execution: false
+  agent: sanctions_watchlist_checker
+research_public_info_task:
+  description: Gather and analyze public information to verify the legitimacy of transactions.
+  expected_output: A report with findings from public sources regarding the legitimacy
+    of transactions.
+  async_execution: false
+  agent: public_info_researcher
+verify_kyc_task:
+  description: Ensure all customer information is accurate and up-to-date by verifying
+    KYC details.
+  expected_output: A report confirming the accuracy and compliance of customer KYC
+    information.
+  async_execution: false
+  agent: kyc_verifier
+conduct_level_3_investigation_task:
+  description: Perform detailed investigations for complex cases that require manual
+    checks and human intervention.
+  expected_output: A comprehensive report on the findings of the Level 3 investigation.
+  async_execution: false
+  agent: level_3_investigator
+  context:
+  - validate_internal_system_task
+  - check_sanctions_watchlist_task
+  - research_public_info_task
+  - verify_kyc_task

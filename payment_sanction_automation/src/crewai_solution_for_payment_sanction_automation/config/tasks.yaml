@@ -1,0 +1,6 @@
+research_public_info_task:
+  description: Gather and analyze public information to verify the legitimacy of transactions.
+  expected_output: A report with findings from public sources regarding the legitimacy
+    of transactions.
+  async_execution: false
+  agent: public_info_researcher

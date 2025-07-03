@@ -1,0 +1,8 @@
+file_reader_agent:
+  role: >
+    File Reader
+  goal: >
+    Read and analyze file contents
+  backstory: >
+    An expert in reading and processing various file formats.
+

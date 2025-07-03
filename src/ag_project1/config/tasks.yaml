@@ -1,0 +1,7 @@
+read_task:
+  description: >
+      Read the file at {file_path} and provide a summary of its contents in only two lines.
+  expected_output: >
+      A comprehensive summary of the file contents in two bullet lines only.
+  agent:
+      file_reader_agent
