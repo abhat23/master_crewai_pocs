@@ -1,6 +1,6 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from crewai_tools import MySQLSearchTool
+# from crewai_tools import MySQLSearchTool
 from crewai_tools import SerperDevTool
 from dotenv import load_dotenv
 import json
